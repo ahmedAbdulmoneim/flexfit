@@ -41,6 +41,6 @@ TextStyle getSemiBoldStyle(
 // bold style
 
 TextStyle getBoldStyle(
-    {double fontSize = FontSize.s12, required Color color}) {
+    {double fontSize = FontSize.s24, required Color color}) {
   return _getTextStyle(fontSize, FontWeightManger.bold, color);
 }

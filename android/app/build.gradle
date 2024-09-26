@@ -9,6 +9,8 @@ android {
     namespace = "com.example.flexfit"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
+    buildToolsVersion "33.0.1"
+
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
