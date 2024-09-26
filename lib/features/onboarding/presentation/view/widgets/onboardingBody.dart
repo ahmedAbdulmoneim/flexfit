@@ -22,16 +22,16 @@ class OnboardingBody extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // image
-        SvgPicture.asset(onboardingImage, fit: BoxFit.fill),
+        SvgPicture.asset(onboardingImage, fit: BoxFit.fill,width: MediaQuery.of(context).size.width,),
         Padding(
-          padding: EdgeInsets.only(left: 30.0, right: 30.0, top: 40.sp),
+          padding: EdgeInsets.only(left: 30.0.w, right: 30.0.w, top: 20.h),
           child: Text(
             AppStrings.onBoardingTitle[onboardingNumber],
             style: Theme.of(context).textTheme.titleMedium,
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(left: 30.0, right: 30.0, top: 20.sp),
+          padding: EdgeInsets.only(left: 30.0.w, right: 30.0.w, top: 15.h),
           child: Text(
             AppStrings.onBoardingSubtitle[onboardingNumber],
             style: Theme.of(context).textTheme.bodySmall,
